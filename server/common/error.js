@@ -1,5 +1,5 @@
-const {StatusCodes} = require ('http-status-codes');
-const { logger, LOGGER } = require('./logger');
+const { StatusCodes } = require('http-status-codes');
+const { LOGGER } = require('./logger');
 
 function logErrors (err, req, res, next) {
     LOGGER.error(err.stack);

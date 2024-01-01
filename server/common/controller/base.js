@@ -1,5 +1,5 @@
 const { StatusCodes } = require('http-status-codes');
-const { fmt_res } = require('../formatter');
+const { fmt_res } = require("../formetter");
 const { LOGGER } = require('../logger');
 
 class BaseController {

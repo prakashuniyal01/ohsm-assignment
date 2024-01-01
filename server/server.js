@@ -1,16 +1,14 @@
 require('dotenv').config();
 
-const {app} = require("./api/app");
-const {mongodb_connection } = require("./api/db/mongo")
-
-
+const {app} = require('./api/app');
+const { LOGGER } = require('./common/logger')
+const { monogdb_connection } = require('./api/db/mongo')
 
 const PORT = process.env.PORT;
 
-mongodb_connection();
+monogdb_connection();
 
 
-
-app.listen(PORT, ()=>{
-    console.log(`Server is running on port ${PORT}`);
-})
+app.listen(PORT, ()=>[
+    LOGGER.info(`Server is running on port ${PORT}`),
+])
