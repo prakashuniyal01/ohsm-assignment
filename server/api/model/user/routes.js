@@ -1,5 +1,6 @@
 const {crud_router} = require('../../../common/router');
-const { TaskModel } = require('./taskModel');
+const { userSchema } = require('./singup')
 
-const taskRouter = crud_router(TaskModel);
-module.exports = {taskRouter}
+
+const userRouter = crud_router(userSchema);
+module.exports = {userRouter}
