@@ -1,5 +1,5 @@
 const {crud_router} = require('../../../common/router');
-const { TaskModel } = require('./taskModel');
+const { inventoryModel } = require('./inventry');
 
-const taskRouter = crud_router(TaskModel);
-module.exports = {taskRouter}
+const inventoryRouter = crud_router(inventoryModel);
+module.exports = { inventoryRouter }

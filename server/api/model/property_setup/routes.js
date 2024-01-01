@@ -1,5 +1,5 @@
 const {crud_router} = require('../../../common/router');
-const { TaskModel } = require('./taskModel');
+const { propartyModel } = require('./propertyModels');
 
-const taskRouter = crud_router(TaskModel);
-module.exports = {taskRouter}
+const propartyRouter = crud_router( propartyModel );
+module.exports = { propartyRouter }
